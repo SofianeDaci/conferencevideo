@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="jquery.mobile-1.0a3.min.css" />
+<script type="text/javascript" src="jquery-1.5.min.js"></script>
+<script type="text/javascript" src="jquery.mobile-1.0a3.min.js"></script>
+<script type="text/javascript">
+    function GetSelectedValut() {
+        var list_value = document.getElementById("search1").value;
+        alert(list_value);
+    }
+</script>
+<html>
+<body>
+    <div data-role="page" id="firstpage">
+        <div data-role="header">
+            <h1>Liste des conférences</h1>
+        </div>
+        <div data-role="content">
+            <ul data-role="listview" data-inset="true">
+                <li id="search">
+                    <a href="#secondpage" value="Selected one" onclick="GetSelectedValut()">Selected one</a>
+                </li>
+                <li id="search1" onclick="GetSelectedValut()" value="Selected two">
+                    <a href="#pagedetail">Select second</a>
+                </li>
+                <li>
+                    <a href="#pagedetail">Select three</a>
+                </li>
+                <li>
+                    <a href="#pagedetail">Select fourth</a>
+                </li>
+                <li>
+                    <a href="#pagedetail">Select fifth</a>
+                </li>
+                <li>
+                    <a href="#pagedetail">Select sixth</a>
+                </li>
+            </ul>
+        </div>
+        <div data-role="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>
